@@ -1,166 +1,152 @@
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.card{
-    border: 1px solid lightgray;
-    padding: 10px;
-    margin: 10px auto;
-    width: 280px;
-    border-radius: 14px;
-    
-}
-.card-img{
-    width: 100%;
-    border-radius: 14px;
-}
-
-
-/* positions 
-static -> default
+/* positions => to place the html elements on the screen
+static => default
 fixed
 sticky
 absolute
 relative
 */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 
-.help{
+.card{
+    border: 1px solid lightgray;
+    width: 270px;
+    padding: 10px;
+    margin: 16px auto;
+    border-radius: 14px;
+   
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.help-btn{
+    padding: 14px 30px;
     background-color: black;
-    padding: 16px 30px;
-    border-radius: 40px;
-    border: none;
-    font-size: 16px;
     color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
     position: fixed;
     bottom: 50px;
     right: 30px;
 }
+/* top, right, bottom, left: distance from that direction */
 
-/* top, left, bottom and right: distance from that direaction
-only work with positions
-*/
-.offer{
-    width: 280px;
-    margin: 10px auto;
+.banner{
+    width: 270px;
+    margin:10px auto;
     background-color: orangered;
     color: white;
-    border-radius: 14px;
     padding: 10px;
+    border-radius: 12px;
     position: sticky;
     top: 0;
+    
 }
-.offer-title{
+.banner-title{
+    margin: 0;
+}
+.banner-desc{
+    font-size: 13px;
     margin: 4px 0;
 }
-.offer-desc{
-    margin: 2px 0;
-    font-size: 14px;
-}
-/* sticky */
-
-
+/* absolute */
 .red{
-    height: 120px;
-    width: 120px;
-    background-color: red;
+    width: 100px;
+    height: 100px;
+    background-color:red;
 }
 .blue{
-    height: 70px;
-    width: 70px;
-    background-color: blueviolet;
+    width: 60px;
+    height: 60px;
+    background-color:royalblue;
+    color: white;
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
 }
 .green{
-    height: 100px;
-    width: 100px;
-    background-color: greenyellow;
+    width: 80px;
+    height: 80px;
+    background-color:rgb(0, 197, 0);
 }
 
-
-
-.relative{
+.parent{
     position: relative;
     width: 700px;
-    margin: 30px auto;
-    border-radius: 18px;
-    background-color: orangered;
-    height: 500px;
-}
-.absolute{
-    height: 100px;
-    width: 100px;
+    height: 400px;
     background-color: blueviolet;
+    margin: 60px auto;
+}
+.child{
     position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
     bottom: 0;
     right: 0;
 }
-
-
 .bg{
     width: 700px;
-    margin: 20px auto;
+    margin: auto;
     position: relative;
 }
 .bg-img{
     width: 100%;
-    border-radius: 16px;
+    border-radius: 18px;
 }
-.content{
-    color: white;
-    position:absolute;
+.bg-content{
+    position: absolute;
     bottom: 100px;
     left: 40px;
+    color: white;
 }
 .btn{
     background-color: #fff;
-    padding: 16px 30px;
     border: none;
-    border-radius: 12px;
+    border-radius: 40px;
+    padding: 16px 30px;
     font-size: 16px;
 }
-
-
-.card-header{
-    position: relative;
-}
-.best{
-position: absolute;
-bottom: 0;
-background-color: rgb(255, 248, 230);
-color: rgb(51, 37, 0);
-padding: 2px 10px;
-border-radius: 12px;
-margin: 10px;
-font-size: 14px;
-}
-.try{
+.best-label{
     position: absolute;
-    top: 0;
-    background-color: rgb(0, 198, 46);
-    color: white;
+    background-color: rgb(255, 246, 230);
+    color: rgb(60, 38, 0);
+    bottom: 0;
+    font-size: 14px;
     padding: 2px 10px;
     border-radius: 12px;
     margin: 10px;
+}
+.try-label{
+    position: absolute;
+    background-color: rgb(236, 255, 230);
+    color: rgb(20, 84, 0);
+    top: 0;
     font-size: 14px;
-    }
-
-
-    .profile{
-        width: 600px;
-        margin: auto;
-        position: relative;
-
-    }
-    .profile-bg{
-        width: 100%;
-    }
-    .user{
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        left: 40px;
-        bottom: -40px;
-        border: 2px solid white;
-    }
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin: 10px;
+}
+.card-header{
+    position: relative;
+}
+.profile{
+    width: 600px;
+    margin:auto;
+    position: relative;
+}
+.profile-img{
+    width: 100%;
+}
+.user{
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+    border: 3px solid white;
+}
