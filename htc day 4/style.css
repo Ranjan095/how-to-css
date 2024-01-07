@@ -1,0 +1,86 @@
+/* media queries */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media(min-width: 600px){
+    .profile{
+        width: 600px;
+        margin: 80px auto;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    .user{
+        height: 210px;
+        border-radius: 12px;
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        padding: 16px 30px;
+        border-radius: 12px;
+        border: none;
+        font-size: 16px;
+    }
+}
+@media(max-width: 599px){
+    .profile{
+        text-align: center;
+        margin: 80px auto;
+        
+        align-items: center;
+    }
+    .user{
+        height: 160px;
+        border-radius: 50%;
+    }
+    .btn{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        padding: 16px 30px;
+        border-radius: 60px;
+        border: none;
+        font-size: 16px;
+    }
+}
+
+.card{
+    transition: .5s;
+    width: 280px;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid lightgray;
+    margin: 60px auto;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.card:hover{
+    transform: rotate(3deg);
+    width: 310px;
+    border:1px solid white;
+    box-shadow: 4px 6px 8px 6px #eee;
+}
+
+.demo{
+    margin-top: 60px;
+    height: 80px;
+    width: 80px;
+    background-color:orangered;
+    animation-name: msd;
+    animation-duration: 1s;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes msd{
+    from{}
+    to{
+        transform: rotate(360deg);
+        margin-left: 600px;
+        border-radius: 50%;
+        background-color: blueviolet;;
+
+    }
+}
