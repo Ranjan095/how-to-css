@@ -1,0 +1,160 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+/* box model
+    border
+    padding
+    margin
+*/
+
+.card{
+    width: 270px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 10px auto;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.banner{
+    border: 1px solid orangered;
+    background-color: orangered;
+    color: white;
+    width: 270px;
+    padding: 10px;
+    border-radius: 14px;
+    margin: 10px auto;
+    position: sticky;
+    top: 20px;
+}
+.banner-title{
+    margin: 4px 0;
+}
+.banner-desc{
+    font-size: 14px;
+    margin: 0;
+}
+/* positions
+    fixed
+    sticky
+    absolute
+    relative
+*/
+
+.help{
+    background-color: black;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+}
+/* 
+    top, left, bottom, right => disatance from that direaction
+    only works with positions
+*/
+.red{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+}
+.blue{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.black{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+}
+
+
+.parent{
+    position: relative;
+    width: 700px;
+    height: 480px;
+    border-radius: 14px;
+    background-color: orangered;
+    margin: auto;
+}
+.child{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.bg{
+    position: relative;
+    width: 760px;
+    margin: 60px auto;
+}
+.bg-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 190px;
+    left: 60px;
+}
+.btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 16px 30px;
+}
+
+
+.best{
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 245, 232);
+    color: rgb(84, 48, 0);
+    font-size: 14px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.ratings{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(24, 14, 0);
+    font-size: 14px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.card-header{
+    position: relative;
+}
+.profile{
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+.cover{
+    width: 100%;
+}
+.user{
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid white;
+    bottom: -45px;
+    left: 45px;
+}
