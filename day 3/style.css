@@ -1,0 +1,89 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card{
+    width: 270px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.flexbox{
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* justify-content: is used to move the elements horizontally */
+
+
+.post{
+    width: 560px;
+    margin: 30px auto;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+}
+.post-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.profile{
+    display: flex;
+    margin-bottom: 24px;
+    gap: 6px;
+    align-items: center;
+}
+/* align-items is used to move the element in the y axis */
+.user{
+    height: 50px;
+    border-radius: 50%;
+}
+.username{
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 26px;
+}
+.btn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+}
+.search{
+    width: 400px;
+    display: flex;
+}
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #eee;
+    font-size: 16px;
+}
+.search-btn{
+    background-color: transparent;
+    border: none;
+    margin-left: -50px;
+}
