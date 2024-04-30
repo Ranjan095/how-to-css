@@ -1,0 +1,149 @@
+/* positions?? 
+    static(default)
+    fixed
+    sticky
+    absolute
+    relative
+*/
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card{
+    width: 270px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    margin: 10px auto;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.help-btn{
+    background-color: black;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+}
+/* top, right, bottom, left => distance from that direaction */
+.banner{
+    position: sticky;
+    top: 0;
+    width: 270px;
+    padding: 10px;
+    color: white;
+    background-color: orangered;
+    margin: 10px auto;
+    border-radius: 14px;
+}
+.banner-title{
+    margin: 0;
+}
+.banner-desc{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.black{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.blue{
+    height: 80px;
+    width: 80px;
+    background-color: dodgerblue;
+}
+
+.parent{
+    width: 700px;
+    height:460px;
+    background-color: orangered;
+    margin: 50px auto;
+    position: relative;
+}
+.child{
+    width: 70px;
+    height:70px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bg{
+    width: 700px;
+    margin: 50px auto;
+    position: relative;
+}
+.bg-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.bg-content{
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    color: white;
+}
+.btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 60px;
+    font-size: 16px;
+    padding: 16px 30px;
+}
+.card-header{
+    position: relative;
+}
+.best{
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    background-color: rgb(255, 248, 235);
+    color: rgb(102, 66, 0);
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+.ratings{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+.profile{
+    width: 600px;
+    margin: 10px auto;
+    position: relative;
+}
+.cover{
+    width: 100%;
+}
+.user{
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+    border: 6px solid white;
+}
