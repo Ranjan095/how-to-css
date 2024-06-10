@@ -57,8 +57,12 @@
     padding: 14px 24px;
     font-size: 14px;
     color: white;
+    
 }
 
+.container{
+    text-align: right;
+}
 /* box-sizing: border-box; ensures that u can use padding and the content does not 
 got out of the parent element */
 
